@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
-  s.name     = 'Masonry'
-  s.version  = '1.1.0'
+  s.name     = 'TVLMasonry'
+  s.version  = '1.1.1'
   s.license  = 'MIT'
   s.summary  = 'Harness the power of Auto Layout NSLayoutConstraints with a simplified, chainable and expressive syntax.'
   s.homepage = 'https://github.com/cloudkite/Masonry'
   s.author   = { 'Jonas Budelmann' => 'jonas.budelmann@gmail.com' }
   s.social_media_url = "http://twitter.com/cloudkite"
 
-  s.source   = { :git => 'https://github.com/cloudkite/Masonry.git', :tag => "v#{s.version}" }
+  s.source   = { :git => 'git@github.com:traveloka/Masonry.git', :tag => "v#{s.version}" }
 
   s.description = %{
     Masonry is a light-weight layout framework which wraps AutoLayout with a nicer syntax.
@@ -15,6 +15,10 @@ Pod::Spec.new do |s|
 	NSLayoutConstraints which results in layout code which is more concise and readable.
     Masonry supports iOS and Mac OSX.
   }
+  
+  s.module_name  = 'Masonry'
+  
+  s.header_dir   = 'Masonry'
 
   pch_AF = <<-EOS
     #ifndef TARGET_OS_IOS
